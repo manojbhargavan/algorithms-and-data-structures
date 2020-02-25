@@ -18,4 +18,8 @@ These are simple minimal example without any/minimal error handling. Written usi
 
     To run the test run: pytest .\insertion_sort_test.py
 * [TypeScript/JavaScript](./typescript)
-* 
+    Install all the required packages: npm install
+    To run the test: npm test
+
+    Javascript is complied by tsc into ./js folder, please look at the tsconfig.json for details.
+* Rust
