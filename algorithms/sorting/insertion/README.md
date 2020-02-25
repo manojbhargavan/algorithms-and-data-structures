@@ -6,13 +6,16 @@ Insertion sort is an efficient algorithm for sorting a small number of elements.
 * We start but looping through each element in input array/list from left to right and inserting it to the appropriate position in the output array/list by comparing the element picked 
 
 ## Code Samples
-These are simple minimal example without any/minimal error handling.
+These are simple minimal example without any/minimal error handling. Written using vscode on windows.
 * [C#](./c-sharp): A Simple console application, Sorting algorithm implemented as extension method. You can either run the console application or the XUnit tests in the test project.
 * [Python](./python): You can run the directly from command line like so, it will print out the results
+
     python .\insertion_sort.py 5,3,6,9,10,45,23,12,-2,4,2 True 
+
     python .\insertion_sort.py 5,3,6,9,10,45,23,12,-2,4,2 False
 
     Or import the same, you may refer to the test file for more information. 
+
     To run the test run: pytest .\insertion_sort_test.py
 * [TypeScript/JavaScript](./typescript)
 * 
