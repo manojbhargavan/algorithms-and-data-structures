@@ -20,6 +20,4 @@ Bubble Sort, Heap Sort, Quick Sort, Merge Sort are some of the predefined algori
 
 As you may understand algorithms have not been defined for each and every problem out there. Knowing these basic algorithms and how to approach a given problem will certainly help you in solving or developing an algorithm for the specific unique problem you are trying to solve.
 
-## Sorting
-
-* [Insertion Sort](./bigo/README.md)
+## [Sorting](./sorting/README.md)
