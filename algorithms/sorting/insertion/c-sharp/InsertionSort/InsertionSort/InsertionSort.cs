@@ -9,21 +9,16 @@ namespace InsertionSort
         public static IEnumerable<T> Sort<T>(IEnumerable<T> input, bool reversed = false) where T : IComparable
         {
             var arrayInput = input.ToArray();
-            for (int i = 1; i < arrayInput.Length; i++)
+            for (int j = 1; j < arrayInput.Length; j++)
             {
-                for (int j = i - 1; j >= 0; j--)
+                var key = arrayInput[j];
+                var i = j - 1;
+                while (i >= 0 && ((!reversed && arrayInput[i].CompareTo(key) > 0) || (reversed && arrayInput[i].CompareTo(key) < 0)))
                 {
-                    if ((!reversed && arrayInput[j].CompareTo(arrayInput[j + 1]) > 0) || (reversed && arrayInput[j].CompareTo(arrayInput[j + 1]) < 0))
-                    {
-                        var key = arrayInput[j + 1];
-                        arrayInput[j + 1] = arrayInput[j];
-                        arrayInput[j] = key;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    arrayInput[i + 1] = arrayInput[i];
+                    i--;
                 }
+                arrayInput[i + 1] = key;
             }
 
             return arrayInput;
