@@ -1,10 +1,4 @@
----
-layout: home
-title: "Big O Notation - Index"
-categories: bigo
----
-
-## Big O Notation
+# Big O Notation - Index
 
 - [Overview Of Big O Notation](./Overview.md)
 - [Steps to Derive Time Complexity - Take 1](./StepstoDeriveTimeComplexity.md)
