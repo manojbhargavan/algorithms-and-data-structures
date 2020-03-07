@@ -1,8 +1,4 @@
----
-layout: post
-title: "Time Complexity O(1) - Constant Time"
-categories: bigo
----
+# Time Complexity O(1) - Constant Time
 
 Let us look a the below method which simply prints the input.
 

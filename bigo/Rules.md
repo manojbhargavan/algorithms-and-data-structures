@@ -1,8 +1,4 @@
----
-layout: post
-title: "Steps to Derive Time Complexity - Take 2"
-categories: bigo
----
+# Steps to Derive Time Complexity - Take 2
 
 We can look at deriving time complexity using the following four rules as well just to make sure we understand how this works. Let us look at the four rules.
 

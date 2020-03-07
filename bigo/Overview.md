@@ -1,8 +1,4 @@
----
-layout: post
-title: "Overview Of Big O Notation"
-categories: bigo
----
+# Overview Of Big O Notation
 
 ## What is Good Code
 

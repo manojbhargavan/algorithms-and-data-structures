@@ -1,8 +1,4 @@
----
-layout: post
-title: "Time Complexity O(n^2) - Quadratic Time"
-categories: bigo
----
+# Time Complexity O(n^2) - Quadratic Time
 
 Let us look a the below method which just print the input which we have take a look at in previous sections.
 
@@ -47,4 +43,4 @@ We can say the overall time it take to execute the above method is `O(2+n+1*n+n*
 
 [Previous << Linear Time O(n) Example](./LinearTime.md)
 
-[Index](./Index.md)
+[Index](./README.md)

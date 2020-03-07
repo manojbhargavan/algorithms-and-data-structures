@@ -1,8 +1,4 @@
----
-layout: post
-title: "Time Complexity O(n) - Linear Time"
-categories: bigo
----
+# Time Complexity O(n) - Linear Time
 
 Let us look a the below extension method which generates an Enumerable of size n and copies the value to n items in the Enumerable.
 
@@ -43,4 +39,4 @@ We can say the overall time it take to execute the above method is O(1 + n + 1) 
 
 [Previous << Constant Time O(1) Example](./ConstantTime.md)
 
-[Index](Index.md)
+[Index](README.md)

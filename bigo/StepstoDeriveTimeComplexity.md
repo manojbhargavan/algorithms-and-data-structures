@@ -1,8 +1,4 @@
----
-layout: post
-title: "Steps to Derive Time Complexity - Take 1"
-categories: bigo
----
+# Steps to Derive Time Complexity - Take 1
 
 We have two major steps to derive the complexity of an algorithm:
 
