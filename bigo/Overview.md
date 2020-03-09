@@ -22,6 +22,17 @@ We can majorly categorize time complexity to:
 - Liner Time O(1): It takes n steps to execute the algorithm i.e., as the input size grows the time to execute the algorithm increases linearly.
 - Quadratic Time O(n^2): It takes n^2 steps to execute the algorithm i.e, as the input size grows the time to execute the algorithm increases quadratically.
 
+All of them mostly listed below:
+
+- Constant Time O(1)
+- Logarithmic Time O(log(n))
+- Linear Time O(n)
+- Linear Logarithmic Time O(nlog(n))
+- Quadratic Time O(n^2)
+- Cubic Time O(n^3)
+- Exponential Time O(b^n), b > 1
+- Factorial Time O(n!)
+
 Take a look at the chart below which show the various time complexities, note that we simplify the big o for an algorithm to one of the below using two simple steps listed in the [next]({{site.baseurl}}{% post_url ./bigo/2019-11-19-02StepstoDeriveTimeComplexity %}) section. We will look at each of these in detail in the upcoming sections. The below chart to determine how your algorithm is expected to perform as your input size grows, ideally, we should target O(n) which is the most common among all of these for most use cases or algorithms.
 
 ![Big o Complexity Chart](./img/bigocomplexitychart.jpg)
