@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructures.LinkedList;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -7,8 +8,9 @@ namespace DataStructures
 {
     public class LinkedList<T> : IEnumerable<T>
     {
-        private ListItem<T> Head { get; set; }
-        private ListItem<T> Tail { get; set; }
+        private Node<T> Head { get; set; }
+        private Node<T> Tail { get; set; }
+        public int Length { get; private set; }
 
         /// <summary>
         /// Add to the beginning of this list
@@ -16,7 +18,7 @@ namespace DataStructures
         /// <param name="item">Item to add</param>
         public void AddFirst(T item)
         {
-            var listItem = new ListItem<T>() { Key = item };
+            var listItem = new Node<T>() { Key = item };
             if (Head == null)
             {
                 Head = listItem;
@@ -27,6 +29,7 @@ namespace DataStructures
                 listItem.Next = Head;
                 Head = listItem;
             }
+            Length++;
         }
 
         /// <summary>
@@ -41,10 +44,11 @@ namespace DataStructures
             }
             else
             {
-                var listItem = new ListItem<T>() { Key = item };
+                var listItem = new Node<T>() { Key = item };
                 Tail.Next = listItem;
                 Tail = listItem;
             }
+            Length++;
         }
 
         /// <summary>
@@ -77,10 +81,11 @@ namespace DataStructures
                         after = true;
                     }
                     var insertAfterItem = after ? GetItemAndBefore(key).Item2 : GetItemAndBefore(key).Item1;
-                    var listItem = new ListItem<T>() { Key = itemToInsert, Next = insertAfterItem.Next };
+                    var listItem = new Node<T>() { Key = itemToInsert, Next = insertAfterItem.Next };
                     insertAfterItem.Next = listItem;
                 }
             }
+            Length++;
         }
 
         public void Delete(T key)
@@ -99,6 +104,7 @@ namespace DataStructures
                     item.Item1.Next = item.Item2?.Next;
                     item.Item2 = null;
                 }
+                Length--;
             }
         }
 
@@ -135,9 +141,9 @@ namespace DataStructures
             return Head == null;
         }
 
-        private (ListItem<T>, ListItem<T>) GetItemAndBefore(T searchItem)
+        private (Node<T>, Node<T>) GetItemAndBefore(T searchItem)
         {
-            ListItem<T> prevItem = null;
+            Node<T> prevItem = null;
             var currentListItem = Head;
             do
             {

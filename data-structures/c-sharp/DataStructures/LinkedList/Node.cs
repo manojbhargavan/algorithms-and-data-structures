@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataStructures
+namespace DataStructures.LinkedList
 {
-    class ListItem<T>
+    class Node<T>
     {
         public T Key { get; set; }
-        public ListItem<T> Next { get; set; }
+        public Node<T> Next { get; set; }
     }
 }
